@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  background-color: rgb(233, 222, 212);
+  overflow: hidden;
+}
+.footer p {
+  padding: 40px 72px 72px 72px;
+  font-family: var(--secondFamily);
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer marquee {
+  padding-block: 10px;
+  background-color: #f54932;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}

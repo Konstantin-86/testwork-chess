@@ -1,0 +1,134 @@
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.main-bg {
+  position: absolute;
+  width: 100%;
+  height: calc(100dvh - 60px);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+}
+.main-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-bg-sun {
+  display: none;
+}
+.main-bg-imageMob {
+  display: none;
+}
+
+.main-inner {
+  padding-top: 26px;
+}
+.container {
+  max-width: 1544px;
+  padding: 0 72px;
+  margin: 0 auto;
+}
+.logo-img {
+  margin-bottom: 62px;
+}
+.title {
+  font-size: 60px;
+  line-height: 110%;
+  max-width: 550px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.title span:first-of-type {
+  display: block;
+  text-align: center;
+}
+
+.title span:last-of-type {
+  display: block;
+  text-align: right;
+}
+.pay-text {
+  font-family: var(--secondFamily);
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 550px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.main-button-inner {
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-button-support {
+  max-width: 263px;
+  text-align: center;
+  padding: 20px 49px;
+  background-color: #1f1f1f;
+  border-radius: 66px;
+  color: #ffffff;
+  font-family: var(--secondFamily);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+
+  border: 2px solid #1f1f1f;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.main-button-about {
+  max-width: 263px;
+  text-align: center;
+  padding: 20px 49px;
+  background-color: transparent;
+  border-radius: 66px;
+  color: #1f1f1f;
+  font-family: var(--secondFamily);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  border: 2px solid #1f1f1f;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.inner-ticker {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.ticker-list {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+.ticker-item {
+  text-decoration: none;
+  padding: 0 30px;
+  flex-shrink: 0;
+}
+@keyframes scroll {
+  from {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-70%, 0, 0);
+  }
+}
